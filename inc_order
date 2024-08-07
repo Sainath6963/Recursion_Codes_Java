@@ -1,4 +1,4 @@
-package inc_order{
+public class inc_order{
 
 public static void incresing(int n) {
 		if(n==100) {
