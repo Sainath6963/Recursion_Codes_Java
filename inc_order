@@ -1,0 +1,19 @@
+package inc_order{
+
+public static void incresing(int n) {
+		if(n==100) {
+			System.out.println(n);
+			return;
+		}
+		
+		System.out.println(n+" ");
+		incresing(n+1);
+	}
+	
+	public static void main(String[]args) {
+		int n =1;
+	   incresing(n);
+	}
+ 
+ }
+ 
