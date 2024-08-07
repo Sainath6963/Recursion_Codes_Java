@@ -1,0 +1,30 @@
+public class fibo_recur{
+
+public static int fibo(int n) {
+	int ans = 0;
+	if(n==0|| n==1) {
+		return n;	
+	}
+	
+	 int n1 = fibo(n-1);
+	 int n2 = fibo(n-2);
+	  ans = n1+n2;
+	 
+	 return ans;
+	
+}
+
+
+ 
+  
+	
+public static void main(String[]args) {
+	int n = 18;
+	int ans =fibo(n);
+	System.out.println(ans);
+	
+	
+	
+}
+}
+	
