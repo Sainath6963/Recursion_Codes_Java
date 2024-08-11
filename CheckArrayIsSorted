@@ -1,0 +1,24 @@
+public static boolean check(int[]arr , int n) {
+	boolean ans = false;
+ if(n==0) {
+	 return true;
+ }
+ 
+ int che1 = n;
+if(arr[n]>arr[n-1]) {
+	ans = true;
+}else {
+	ans = false;
+}
+
+check(arr, n-1);
+ 
+ return ans;
+	
+}
+public static void main(String[]args) {
+	int[] arr = {1,2,3,4};
+	int n = arr.length-1;
+	boolean ans = check(arr,n);
+	System.out.println(ans);
+}
