@@ -1,0 +1,17 @@
+public static int fact(int n) {
+	if(n==0 || n==1) {
+		return 1;
+	}
+	int ans = 0;
+	int fact1=n;
+	int fact2= fact(n-1);
+	int sum = fact1*fact2;
+	
+  return sum;
+	
+}
+public static void main(String[]args) {
+	int n = 5;
+ int ans = fact(n);
+ System.out.println(ans);
+}
