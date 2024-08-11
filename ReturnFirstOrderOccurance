@@ -1,0 +1,21 @@
+public static int check(int[]arr , int L , int key) {
+	if(L==0) {
+		return 0;
+	}
+	
+	if(arr[L]== key) {
+		return L;
+	}
+	
+	check(arr , L-1 , key);
+	return L;
+}
+ 
+	
+public static void main(String[]args) {
+	int[]arr = {1,2,4,8,5,4,1,6,5,7,8};
+	int L = arr.length-1;
+	int key = 5;
+	int ans = check(arr , L , key);
+	System.out.println(ans);
+}
